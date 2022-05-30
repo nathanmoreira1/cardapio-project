@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/190869/isolated/preview/68208da69d14a72dd02e4e413866ed6f-building-restaurant-flat-illustration-by-vexels.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="local-name">PETIT GATEAU</div>
+        <div class="category-name">Categorias</div>
+        <div onclick="toogle_item('.item1-container','.item-1-checkbox')" class="item1-container">
+            <input class="item-1-checkbox" type="checkbox" name="" id="">
+            <img class="imagem-produto" src="https://www.receitasmais.com.br/wp-content/uploads/2020/05/657D590F-2660-47AC-881B-4A993BF5FEE7-scaled.jpeg" alt="">
+            <div class="item1-container-infos">
+                <p style="font-family:'IBM Plex Serif', serif; font-size: 20px;">Macarrão | R$28,00</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p>
+            </div>
+        </div>
+        <div  onclick="toogle_item('.item2-container','.item-2-checkbox')" class="item2-container">
+            <input class="item-2-checkbox" type="checkbox" name="" id="">
+            <img class="imagem-produto" src="https://th.bing.com/th/id/R.71054bd93ab6f1703a7c218e0aa6a3bc?rik=hAEVUPEfLlFSAQ&pid=ImgRaw&r=0" alt="">
+            <div class="item2-container-infos">
+                <p style="font-family:'IBM Plex Serif', serif; font-size: 20px;">Pizza | R$31,00</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut exercitation.</p>
+            </div>
+        </div>
+        <div onclick="toogle_item('.item3-container','.item-3-checkbox')" class="item3-container">
+            <input class="item-3-checkbox" type="checkbox" name="" id="">
+            <img class="imagem-produto" src="https://s2.glbimg.com/1bsN3Lm2uSiM5Qk2BR26dZlTO3Y=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/u/7/O9wXBoQhWZkpVdafDAnw/queijo-quente.jpeg" alt="">
+            <div class="item3-container-infos">
+                <p style="font-family:'IBM Plex Serif', serif; font-size: 20px;">Lanche | R$29,00</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut exercitation.</p>
+            </div>
+        </div>
+        <div  onclick="toogle_item('.item4-container','.item-4-checkbox')" class="item4-container">
+            <input class="item-4-checkbox" type="checkbox" name="" id="">
+            <img class="imagem-produto" src="https://th.bing.com/th/id/R.b96ead7429906a3de4ed3c4fa596b41b?rik=B1hlwMpKOU0RWg&pid=ImgRaw&r=0" alt="">
+            <div class="item4-container-infos">
+                <p style="font-family:'IBM Plex Serif', serif; font-size: 20px;">Strogonoff | R$30,00</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut exercitation.</p>
+            </div>
+        </div>
+        <div  onclick="toogle_item('.item5-container','.item-5-checkbox')" class="item5-container">
+            <input class="item-5-checkbox" type="checkbox" name="" id="">
+            <img class="imagem-produto" src="https://th.bing.com/th/id/R.a401a947a296b8d64549e3db8eee13b4?rik=FhyvaIlOGVUVFg&pid=ImgRaw&r=0" alt="">
+            <div class="item5-container-infos">
+                <p style="font-family:'IBM Plex Serif', serif; font-size: 20px;">Pastel | R$13,00</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut exercitation.</p>
+            </div>
+        </div>
+
+        <div class="total-container">
+            <div class="total">CALCULAR TOTAL</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

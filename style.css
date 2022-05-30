@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://wallpaperforu.com/wp-content/uploads/2020/08/food-wallpaper-20080219232012.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    width: 65vw;
+    max-width: 1248px;
+    height: 100%;
+    padding: 50px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    gap: 3vh;
+}
+.item1-container , .item2-container , .item3-container , .item4-container , .item5-container {
+    width:100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+    cursor: pointer;
+    padding: 12px;
+    border: 0.5px hidden #DDD
+}
+.item1-container:hover , .item2-container:hover , .item3-container:hover , .item4-container:hover , .item5-container:hover {
+    border-left: 0.5px solid black;
+    transition: all ease 0.5s;
+}
+
+.item1-container-infos , .item2-container-infos , .item3-container-infos , .item4-container-infos , .item5-container-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2vh;
+}
+.imagem-produto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.item1-container-infos p , .item2-container-infos p, .item3-container-infos p, .item4-container-infos p, .item5-container-infos p {
+    text-align: left;
+}
+.item-1-checkbox , .item-2-checkbox , .item-3-checkbox , .item-4-checkbox , .item-5-checkbox {
+    opacity: 0;
+}
+.item_checked {
+    background-color: #DDD;
+    animation-name: MarcarMenu;
+    animation-duration: 1000ms;
+    border-radius: 7px;
+}
+@keyframes MarcarMenu {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #DDD;
+    }
+}
+.item-unchecked {
+    background-color: #FFF;
+    animation-name: DesmarcarMenu;
+    animation-duration: 1000ms;
+}
+@keyframes DesmarcarMenu {
+    from {
+        background-color: #DDD;
+    }
+    to {
+        background-color: #FFF;
+    }
+}
+.total-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 7px;
+    width: 220px;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.total:hover {
+    opacity: 0.85;
+}
+.local-name {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400;
+    font-size: 40px;
+}
+.category-name {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+@media (max-width:1300px) {
+    .container {
+        width: 75vw;
+    }
+}   
+@media (max-width:1060px) {
+    .total-container {
+        justify-content: center;
+    }
+}
+@media (max-width:650px) {
+    .container {
+        width: 84vw;
+    }
+}
+@media (max-width:590px) {
+    .container {
+        width: 90vw;
+    }
+}
+@media (max-width:450px) {
+    .container {
+        width: 95vw;
+    }
+}
